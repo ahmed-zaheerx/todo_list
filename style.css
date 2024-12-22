@@ -47,8 +47,9 @@ button {
   background-color: bisque;
   color: black;
   border: none;
+  outline: none;
   border-radius: 50px;
-  padding: 5px 10px;
+  padding: 3px 7px;
   font-size: 12px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -70,6 +71,8 @@ form {
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .todo-input input {
@@ -84,4 +87,40 @@ form {
 input::placeholder {
   color: #aaa;
   font-size: italic;
+}
+
+footer p {
+  font-size: 25px;
+  font-style: oblique;
+}
+
+ul {
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;  /* Stack text and button vertically */
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+ul li button {
+  font-size: 15px;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+li.completed label {
+  text-decoration: line-through;
+  color: #999;
 }
