@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">  
+  <meta name="description" content="To Do List">
+  <link rel="stylesheet" href="style.css">
+  <title>To Do List</title>
+</head>
+<body>
+  <div class="todo-app">
+
+    <header class="todo-header">
+      <h1 class="title">To Do List</h1>
+    </header>
+
+    <section class="todo-input">
+      <form id="task-form">
+        <input type="text" placeholder="Enter task here" id="input" required>
+        <button type="submit">Add task</button>
+      </form>
+    </section>
+
+    <section class="todo-list">
+      <ul id="tasks">
+        <li class="task">
+          <input type="checkbox" class="task-checkbox">
+          <span class="task-text">List 1</span>
+          <button class="task-delete">Delete</button>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="todo-footer">
+      <p>Task Remaining: <span id="task-count">0</span></p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
